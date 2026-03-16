@@ -319,11 +319,22 @@ word-break:break-word;
 }
 #stavkeTable th:nth-child(4),
 #stavkeTable td:nth-child(4){
-width:80px;   /* količina - stanu 4 znamenke */
+width:70px;   /* količina - stanu 4 znamenke */
+}
+
+.qty-cell{
+display:flex;
+align-items:center;
+gap:6px;
 }
 
 .qty-input{
 width:70px;
+flex-shrink:0;
+}
+
+.actions-cell button{
+margin-left:4px;
 }
 #stavkeTable th:nth-child(4),
 #stavkeTable td:nth-child(4){
@@ -332,8 +343,8 @@ width:55px;
 
 #stavkeTable th:nth-child(5),
 #stavkeTable td:nth-child(5){
-width:40px;
-text-align:center;
+width:65px;
+text-align:right;
 }
 
 #stavkeTable .icon-btn{
