@@ -8,7 +8,7 @@ const PRECACHE_URLS = [
   "manifest.json",
   "icon-192.png",
   "icon-512.png",
-  "logo.png.png",
+  "logo.png",
   "icon.ico",
   "artikli.csv",
   "kupci.csv"
