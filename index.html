@@ -288,57 +288,58 @@ max-width:160px;
 
 @media (max-width:640px){
 
+/* samo tablica stavki otpremnice */
+
+#stavkeTable{
+table-layout:fixed;
+width:100%;
+font-size:12px;
+}
+
+#stavkeTable th,
+#stavkeTable td{
+padding:4px 3px;
+}
+
+#stavkeTable th:nth-child(1),
+#stavkeTable td:nth-child(1){
+width:26px;
+text-align:center;
+}
+
+#stavkeTable th:nth-child(2),
+#stavkeTable td:nth-child(2){
+width:65px;
+}
+
+#stavkeTable th:nth-child(3),
+#stavkeTable td:nth-child(3){
+width:auto;
+word-break:break-word;
+}
+
+#stavkeTable th:nth-child(4),
+#stavkeTable td:nth-child(4){
+width:55px;
+}
+
+#stavkeTable th:nth-child(5),
+#stavkeTable td:nth-child(5){
+width:32px;
+text-align:center;
+}
+
+#stavkeTable .icon-btn{
+width:24px;
+height:24px;
+padding:0;
+}    
 .container{
 padding:4px;
 }
 
 .section{
 padding:14px;
-}
-
-/* tablica na otpremnici */
-
-table{
-font-size:12px;
-table-layout:fixed;
-width:100%;
-}
-
-th,td{
-padding:6px 4px;
-}
-
-th:nth-child(1),
-td:nth-child(1){
-width:28px;
-text-align:center;
-}
-
-th:nth-child(2),
-td:nth-child(2){
-width:70px;
-}
-
-th:nth-child(3),
-td:nth-child(3){
-width:auto;
-word-break:break-word;
-}
-
-th:nth-child(4),
-td:nth-child(4){
-width:60px;
-}
-
-th:nth-child(5),
-td:nth-child(5){
-width:40px;
-text-align:center;
-}
-
-.icon-btn{
-width:28px;
-height:28px;
 }
 
 #arhivaBody td:nth-child(3){
@@ -444,7 +445,7 @@ const logoBase64 ="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAABVCAYAAAC
 <input type="number" id="kolicinaInput" placeholder="Količina">
 <button onclick="dodajArtikl()">Dodaj</button>
 
-<table>
+<table id="stavkeTable">
 <thead>
 <tr>
 <th>Rb</th>
